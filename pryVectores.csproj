@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fmrConsultarDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrConsultarDatos.Designer.cs">
+      <DependentUpon>fmrConsultarDatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="fmrDatos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fmrDatos.Designer.cs">
       <DependentUpon>fmrDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmrListadoGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrListadoGeneral.Designer.cs">
+      <DependentUpon>fmrListadoGeneral.cs</DependentUpon>
     </Compile>
     <Compile Include="fmrNuevoVendedor.cs">
       <SubType>Form</SubType>
@@ -66,8 +78,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fmrConsultarDatos.resx">
+      <DependentUpon>fmrConsultarDatos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fmrDatos.resx">
       <DependentUpon>fmrDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrListadoGeneral.resx">
+      <DependentUpon>fmrListadoGeneral.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fmrNuevoVendedor.resx">
       <DependentUpon>fmrNuevoVendedor.cs</DependentUpon>

@@ -102,12 +102,14 @@
             this.listadoGeneralDeVendedoresToolStripMenuItem.Name = "listadoGeneralDeVendedoresToolStripMenuItem";
             this.listadoGeneralDeVendedoresToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
             this.listadoGeneralDeVendedoresToolStripMenuItem.Text = "Listado general de vendedores...";
+            this.listadoGeneralDeVendedoresToolStripMenuItem.Click += new System.EventHandler(this.listadoGeneralDeVendedoresToolStripMenuItem_Click);
             // 
             // consultaDeDatosDeUnVendedorToolStripMenuItem
             // 
             this.consultaDeDatosDeUnVendedorToolStripMenuItem.Name = "consultaDeDatosDeUnVendedorToolStripMenuItem";
             this.consultaDeDatosDeUnVendedorToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
             this.consultaDeDatosDeUnVendedorToolStripMenuItem.Text = "Consulta de datos de un vendedor...";
+            this.consultaDeDatosDeUnVendedorToolStripMenuItem.Click += new System.EventHandler(this.consultaDeDatosDeUnVendedorToolStripMenuItem_Click);
             // 
             // fmrInicial
             // 

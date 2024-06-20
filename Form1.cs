@@ -13,20 +13,12 @@ namespace pryVectores
 {
     public partial class fmrInicial : Form
     {
+
         public fmrInicial()
         {
             InitializeComponent();
         }
 
-        public struct RegistroVendedor
-        {
-            public Int32 Codigo;
-            public string Nombre;
-            public Decimal Sueldo;
-        }
-
-        public static RegistroVendedor[] Vendedor = new RegistroVendedor[100];
-        public static Int32 IND = 0;
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -47,6 +39,18 @@ namespace pryVectores
         {
             fmrNuevoVendedor fmrNuevoVendedor = new fmrNuevoVendedor();
             fmrNuevoVendedor.ShowDialog();
+        }
+
+        private void listadoGeneralDeVendedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fmrListadoGeneral fmrListadoGeneral = new fmrListadoGeneral();
+            fmrListadoGeneral.ShowDialog();
+        }
+
+        private void consultaDeDatosDeUnVendedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fmrConsultarDatos fmrConsultarDatos = new fmrConsultarDatos();
+            fmrConsultarDatos.ShowDialog();
         }
     }
 }

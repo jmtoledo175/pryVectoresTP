@@ -43,5 +43,43 @@ namespace pryVectores
         {
             cmdCargar.Enabled = true;
         }
+        public struct RegistroVendedor
+        {
+            public Int32 Codigo;
+            public string Nombre;
+            public Decimal Sueldo;
+        }
+        public static class DatosVendedores
+        {
+            public static RegistroVendedor[] Vendedor = new RegistroVendedor[100];
+            public static Int32 IND = 0;
+        }
+        private void cmdCargar_Click(object sender, EventArgs e)
+        {
+            
+            if(DatosVendedores.IND < 100)
+            {
+                Int32 Codigo = Convert.ToInt32(txtCodigo.Text);
+                string Nombre = txtNombre.Text;
+                Decimal Sueldo = Convert.ToDecimal(txtSueldo.Text);
+                RegistroVendedor nuevoVendedor = new RegistroVendedor
+                {
+                    Codigo = Codigo,
+                    Nombre = Nombre,
+                    Sueldo = Sueldo
+                };
+
+                DatosVendedores.Vendedor[DatosVendedores.IND]= nuevoVendedor;
+                DatosVendedores.IND++;
+                MessageBox.Show("Vendedor agregado con exito");
+                txtCodigo.Clear();
+                txtNombre.Clear();
+                txtSueldo.Clear();
+            }
+            else
+            {
+                MessageBox.Show("No se puede agregar al vendedor, vector lleno");
+            }
+        }
     }
 }

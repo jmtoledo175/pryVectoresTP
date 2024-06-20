@@ -96,6 +96,7 @@
             this.cmdCargar.TabIndex = 6;
             this.cmdCargar.Text = "Cargar";
             this.cmdCargar.UseVisualStyleBackColor = true;
+            this.cmdCargar.Click += new System.EventHandler(this.cmdCargar_Click);
             // 
             // fmrNuevoVendedor
             // 
